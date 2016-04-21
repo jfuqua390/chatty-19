@@ -1,0 +1,40 @@
+.chatroom-box {
+  overflow-y: scroll;
+  max-height: 25rem;
+}
+
+.message-item {
+  margin: 0;
+}
+
+.user-input-box {
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  position: relative;
+}
+
+.user-input-input {
+  width: 98%;
+  font-size: 1.2rem;
+  margin: .8rem 0;
+  border: 1px solid $brand-purple;
+  outline: none;
+}
+
+.user-input-btn {
+  width: 10%;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 16px;
+  right: -25px;
+  color: $brand-purple;
+}
+
+.message-date {
+  color: green;
+}
+
+.message-username {
+  color: red;
+}

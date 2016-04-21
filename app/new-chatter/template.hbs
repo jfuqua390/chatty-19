@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="button-box">
+    <h2 class="button-box__title">Register Your New Account Below</h2>
+    <form class="login-form" {{action createUser model on="submit"}}>
+        {{input class="login-input" placeholder="Enter Email..." value=model.email}}
+        {{input class="login-input" placeholder="Enter username..." value=model.username}}
+        {{input type="password" class="login-input" placeholder="Enter password" value=model.password}}
+      <button class="login-btn">Register</button>
+    </form>
+    <div class="button-box__footer">
+      <h6 class="button-box__footer__text">Already a user?</h6>
+      {{#link-to 'login' class="button-box__footer__text footer-link"}} Click here! {{/link-to}}
+    </div>
+  </div>
+</div>
+
+{{outlet}}

@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="button-box">
+    <h2 class="button-box__title">Please Login Below</h2>
+    <form class="login-form" {{action login model on="submit"}}>
+      {{input class="login-input" placeholder="Enter email..." value=model.email}}
+      {{input type="password" class="login-input" placeholder="Enter password" value=model.password}}
+      <button class="login-btn">Login</button>
+    </form>
+    <div class="button-box__footer">
+      <h6 class="button-box__footer__text">Not yet a user?</h6>
+      {{#link-to 'new-chatter' class="button-box__footer__text footer-link"}} Click here! {{/link-to}}
+    </div>
+  </div>
+</div>
+
+{{session.user}}
+
+{{outlet}}

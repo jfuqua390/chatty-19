@@ -6,6 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('login');
+  this.route('room');
+  this.route('new-chatter');
 });
 
 export default Router;

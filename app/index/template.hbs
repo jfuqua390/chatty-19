@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="button-box">
+    <ul class="links-list">
+      <li class="links-list__item">
+        <h4 class="btn-box__text">Already a user?</h4>
+        {{#link-to 'login' class="btn-box__link"}}
+        Login
+        {{/link-to}}
+      </li>
+      <li class="links-list__item">
+        <h4 class="btn-box__text">Or sign up for free!</h4>
+        {{#link-to 'new-chatter' class="btn-box__link"}}
+        Register New Account
+        {{/link-to}}
+      </li>
+      <li class="links-list__item">
+        <h4 class="btn-box__text">Get Chatting!</h4>
+        {{#link-to 'room' class="btn-box__link"}}
+        View Active Chat Rooms
+        {{/link-to}}
+      </li>
+    </ul>
+  </div>
+</div>
+{{outlet}}
