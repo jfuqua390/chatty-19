@@ -12,7 +12,7 @@ export default Ember.Controller.extend({
     while(true) {
       yield timeout(1000);
       this.scroll();
-      console.log(`polling`);
+      console.log(`pollin..`);
       this.store.findAll(`message`, { include: `chatter` });
     }
   }),
