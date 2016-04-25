@@ -1,0 +1,29 @@
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.button-box {
+  margin-top: 5rem;
+  box-shadow: 3px 3px 15px #000000;
+  max-height: 65%;
+}
+
+.links-list {
+  display: flex;
+
+  &__item {
+    width: 33%;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.btn-box__text {
+  margin: 0;
+}
+
+.btn-box__link {
+  color: $brand-purple;
+}

@@ -1,0 +1,23 @@
+<div class="container">
+  <button {{action scroll}}>Scroll me:)</button>
+  <div class="button-box">
+    <div class="chatroom-box">
+        <ul class="messages-list">
+        {{log model.content}}
+        {{#each model as |message|}}
+        <li class="message-item">
+          <span class="message-username">{{message.chatter.username}}</span>
+          (<span class="message-date">{{moment-format message.createdAt 'MMM Do, hh:mm a'}}</span>):
+          <span class="message-content">{{message.content}}</span>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    <form class="user-input-box" {{action createMessage newContent on="submit"}}>
+      {{input type="text" class="user-input-input" placeholder="..." value=newContent}}
+      {{fa-icon "arrow-right" class="user-input-btn"}}
+    </form>
+  </div>
+</div>
+
+{{outlet}}
